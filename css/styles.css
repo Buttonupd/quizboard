@@ -3,6 +3,9 @@ body{
   background-image: linear-gradient(to right, #BA55D3 , #B0E0E6);
 
 }
+.container{
+  text-align: center;
+}
 .well{
   border-radius: 40px;
   width: 1200px;
@@ -39,9 +42,16 @@ body{
   border-radius: 40px;
   background-color: white;
 }
-.container{
-  text-align: center;
-}
+
 h3{
   font-family: 'Amaranth', sans-serif;
+}
+button{
+  width:80px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: #00FF7F;
+  color: black;
+  font-weight: bolder;
+
 }
