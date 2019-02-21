@@ -4,13 +4,17 @@
     <title>Html Quiz</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+
   </head>
   <body>
     <div class="container">
       <div class="well">
-        <h1>QUIZ BOARD</h1>
+        <h1 id=head>QUIZ BOARD</h1>
         <p>How well do you know your HTML and JS</p>
       </div>
 
@@ -62,7 +66,7 @@
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="htmlMeaning" value="HTML5"> Hyper Tense Markup Language
+              <input type="radio" name="htmlMeaning" value="HTML3"> Hyper Tense Markup Language
             </label>
           </div>
 
@@ -82,8 +86,8 @@
               <input type="radio" name="creator" value="creator3"> Tim Markup
             </label>
           </div>
-                  <br><br>
-          <button>Proceed</button>
+                  <br>
+          <button id="proceed" onclick="proceed1()">Proceed</button>
       </form>
 
 
@@ -155,7 +159,6 @@
                 <input type="radio" name="dataType" value="type3"> Header
               </label>
             </div>
-                <br><br>
             <button>Submit!</button>
         </form>
       </div>
