@@ -1,9 +1,7 @@
 var total = 0;
-var names= function(){
-  var name = parseInt(["year", "htmlType", "htmlMeaning", "creator", "htmlSec", "stdx", "ecma", "dataType"].value());
-  return(+=name);
-}
-//
+var result = function(){
+  total +=parseInt(["year", "htmlType", "htmlMeaning", "creator", "htmlSec", "stdx", "ecma", "dataType"].value());
+};
 
 $(document).ready(function(){
   $("#proceed").click(function(){
@@ -12,14 +10,12 @@ $(document).ready(function(){
     $("#form2").fadeIn();
   });
 
-$("#submit").click(function(check){
+$("#submit").click(function(){
   event.preventDefault();
   $("#form2").fadeOut();
   $("#form3").show();
 
-  var name = result
+  $("#message").text(total);
 
-  $("#message").text(result);
 });
-
 });
