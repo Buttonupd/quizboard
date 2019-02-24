@@ -1,4 +1,4 @@
-## THE MIT LICENSE
+## MIT LICENSE
 
 ## Copyright <2010> <RAYMOND GITONGA>
 
