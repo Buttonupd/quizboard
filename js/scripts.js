@@ -1,6 +1,13 @@
 var total = 0;
 function myFunc(userValue) {
-  var names = ["year", "htmlType", "htmlMeaning", "creator", "htmlSec", "stdx", "ecma", "dataType"]
+  var names = ["year", "htmlType", "htmlMeaning", "creator", "htmlSec", "stdx", "ecma", "dataType"];
+  names.forEach(function(name) {
+    var userValue = $("input:radio[name=" + name + "]:checked").val();
+    if(userValue === "12.5") {
+      total+=12.5;
+    }
+  });
+
   // var q1 = document.getElementsByName('year');
   //   if(q1[0].checked){
   //     total===12.5;
@@ -21,7 +28,7 @@ function myFunc(userValue) {
   //     };
   //     total = q1+q2+q3;
 
-};
+}
 
 $(document).ready(function(){
   $("#proceed").click(function(){
@@ -34,10 +41,13 @@ $("#submit").click(function(){
   event.preventDefault();
   $("#form2").fadeOut();
   $("#form3").show();
+  myFunc();
 
-  alert(total.length);
+  
 
-  // $("#message").text(total);
+  $("#message").text(total);
+
+
 
 });
 });
