@@ -21,6 +21,7 @@ $("#submit").click(function(){
   event.preventDefault();
   $("#form2").fadeOut();
   $("#form3").show();
+  $("#retry").show();
   myFunc();
 
   if(total >= 80) {
