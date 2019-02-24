@@ -1,3 +1,4 @@
+// Business (or back-end) logic:
 var total = 0;
 function myFunc(userValue) {
     var names = ["year", "htmlType", "htmlMeaning", "creator", "htmlSec", "stdx", "ecma", "dataType"];
@@ -9,7 +10,7 @@ function myFunc(userValue) {
   });
 }
 
-
+// User interface (or front-end) logic:
 $(document).ready(function(){
   $("#proceed").click(function(){
     event.preventDefault();
