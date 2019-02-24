@@ -1,18 +1,25 @@
 var total = 0;
-function(){
-    var q1 = getElementsByName('year').value();
-    var q2 = getElementsByName('htmlType').value();
-    var q3 = getElementsByName('htmlMeaning').value();
-    var q4 = getElementsByName('creator').value();
-    var q5 = getElementsByName('htmlSec').value();
-    var q6 = getElementsByName('stdx').value();
-    var q7 = getElementsByName('ecma').value();
-    var q8 = getElementsByName('dataType').value();
-
-    total = parseInt((q1+q2+q3+q4+q5+q6+q7+q8));
-
+function myFunc() {
+  var q1 = document.getElementsByName('year');
+    if(q1[0].checked){
+      total=12.5;
+    }else{
+      total=0;
+    };
+  var q2 = document.getElementsByName('htmlType');
+    if(q2[0].checked){
+      total=12.5;
+    }else{
+      total=0;
+    };
+    var q3 = document.getElementsByName('htmlMeaning');
+      if(q3[1].checked){
+        total=12.5;
+      }else{
+        total=0;
+      };
+  total = q1+q2+q3;
 };
-
 $(document).ready(function(){
   $("#proceed").click(function(){
     event.preventDefault();
