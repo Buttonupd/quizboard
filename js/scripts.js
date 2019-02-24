@@ -7,27 +7,6 @@ function myFunc(userValue) {
       total+=12.5;
     }
   });
-
-  // var q1 = document.getElementsByName('year');
-  //   if(q1[0].checked){
-  //     total===12.5;
-  //   }else{
-  //     total===0;
-  //   };
-  // var q2 = document.getElementsByName('htmlType');
-  //   if(q2[0].checked){
-  //     total===12.5;
-  //   }else{
-  //     total===0;
-  //   };
-  //   var q3 = document.getElementsByName('htmlMeaning');
-  //     if(q3[1].checked){
-  //       total===12.5;
-  //     }else{
-  //       total===0;
-  //     };
-  //     total = q1+q2+q3;
-
 }
 
 $(document).ready(function(){
@@ -43,9 +22,15 @@ $("#submit").click(function(){
   $("#form3").show();
   myFunc();
 
-  
+  if(total >= 80) {
+     $("#comments").text("EXCELLENT PERFOMANCE!!!");
+   } else if(total >= 50) {
+     $("#comments").text("Good work!");
+   }else{
+     $("#comments").text("Poor trial, try again");
+   }
 
-  $("#message").text(total);
+  $("#message").text(parseInt(total) + "%");
 
 
 
