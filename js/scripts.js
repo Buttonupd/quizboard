@@ -9,6 +9,7 @@ function myFunc(userValue) {
   });
 }
 
+
 $(document).ready(function(){
   $("#proceed").click(function(){
     event.preventDefault();

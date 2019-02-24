@@ -33,7 +33,7 @@ body{
 }
 #form1{
   width: 600px;
-  height: 570px;
+  height: 590px;
   display: block;
   border-style: solid;
   border-width: small;
@@ -65,7 +65,11 @@ button{
   background-color: #00FF7F;
   color: black;
   font-weight: bolder;
-
+  margin-left: 20px;
+}
+#retry{
+  background-color: #F08080;
+  margin-right: 20px;
 }
 #comments {
   -webkit-animation-duration: 4s;
@@ -80,5 +84,5 @@ button{
 }
 #message{
 font-family: 'Mogra', cursive;
-font-size: 30px; 
+font-size: 30px;
 }
