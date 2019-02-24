@@ -33,7 +33,7 @@ body{
 }
 #form1{
   width: 600px;
-  height: 590px;
+  height: 600px;
   display: block;
   border-style: solid;
   border-width: small;
@@ -44,7 +44,7 @@ body{
 }
 #form3{
     width: 600px;
-    height: 570px;
+    height: 400px;
     display: block;
     border-style: solid;
     border-width: small;
@@ -69,7 +69,9 @@ button{
 }
 #retry{
   background-color: #F08080;
-  margin-right: 20px;
+  margin-right: 20px;\width:80px;
+  height: 40px;
+  width: 80px;
 }
 #comments {
   -webkit-animation-duration: 4s;
