@@ -24,8 +24,11 @@ $("#submit").click(function(){
 
   if(total >= 80) {
      $("#comments").text("EXCELLENT PERFOMANCE!!!");
+     $("#comments").addClass('animated heartBeat');
+
    } else if(total >= 50) {
      $("#comments").text("Good work!");
+     $("#comments").addClass('animated bounce');
    }else{
      $("#comments").text("Poor trial, try again");
    }

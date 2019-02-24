@@ -67,3 +67,8 @@ button{
   font-weight: bolder;
 
 }
+#comments {
+  -webkit-animation-duration: 4s;
+  /* -webkit-animation-delay: 1000ms; */
+  -webkit-animation-iteration-count: infinite;
+}
