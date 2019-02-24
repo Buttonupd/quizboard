@@ -73,3 +73,12 @@ button{
   -moz-animation-duration: 4s;
   -moz-animation-iteration-count: infinite;
 }
+
+.radio1{
+  font-family: 'Amaranth', sans-serif;
+  font-size: 15px;
+}
+#message{
+font-family: 'Mogra', cursive;
+font-size: 30px; 
+}
