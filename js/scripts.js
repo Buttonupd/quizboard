@@ -10,6 +10,10 @@ function myFunc(userValue) {
   });
 }
 
+function reloadFunction() {
+  location.reload();
+}
+
 //User Interface
 $(document).ready(function(){
   $("#proceed").click(function(){
